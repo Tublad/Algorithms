@@ -4,6 +4,8 @@ import Foundation
 
 //1. *Количество маршрутов с препятствиями. Реализовать чтение массива с препятствием и нахождение количество маршрутов.
 
+// Это сейчас без препятсвий
+
 func printSearch(one: Int, two: Int, array: [[Int]]) {
     for i in 0..<one {
         for j in 0..<two {
@@ -35,4 +37,11 @@ func getMainSearch(countOne N: Int, countTwo M: Int) {
 }
 
 getMainSearch(countOne: 3, countTwo: 3)
+
 //2. Решить задачу о нахождении длины максимальной последовательности с помощью матрицы.
+
+var i: Int = 0, j = 0, m = 0, n = 0
+var c: Array = Array(repeating: Array(repeating: 0, count: 8), count: 8)
+var x: Array = Array(repeating: 0, count: 8), y = Array(repeating: 0, count: 8)
+var b: Array = Array(repeating: Array(repeating: 0, count: 8), count: 8)
+
